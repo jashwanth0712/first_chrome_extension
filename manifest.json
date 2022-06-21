@@ -1,0 +1,19 @@
+{
+    "name" : " My google search",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description" : "Some descp here",
+    "content_scripts" : [
+        {
+            "js" : ["gmail.js"],
+            "css": ["styles.css"],
+            "run_at": "document_end",
+            "matches" : ["*://mail.google.com/mail/u/0/*"]
+        },
+        {
+            "js":["gmail.js"],
+            "matches":["https://mail.google.com/mail/u/0/#inbox"]
+        }
+    ]
+
+}
